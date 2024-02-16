@@ -46,11 +46,9 @@ services:
   #     context: srcs/frontend
   #   restart: always
   #   ports:
-  #     - 4000:4000
+  #     - 5173:5173
   #   depends_on:
   #     - backend
-  #   volumes:
-  #     - ./srcs/frontend:/usr/src/app/front-end
 
 volumes:
   db-data:
@@ -61,4 +59,4 @@ secrets:
 
 networks:
   backnet:
-  frontnet:
+  # frontnet:
