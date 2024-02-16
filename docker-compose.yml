@@ -21,8 +21,8 @@ services:
     environment:
       - MYSQL_DATABASE=GeneeTest
       - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
-    expose:
-      - 3306
+    ports:
+      - 3306:3306
 
   backend:
     build:
